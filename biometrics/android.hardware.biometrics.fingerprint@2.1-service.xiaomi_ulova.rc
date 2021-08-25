@@ -34,3 +34,7 @@ on property:ro.vendor.xiaomi.device=ugg
 on property:ro.vendor.xiaomi.device=ugglite
     stop vendor.fps_hal
     mount none /vendor/etc/permissions/blank.xml /vendor/etc/permissions/android.hardware.fingerprint.xml bind
+
+on property:ro.vendor.xiaomi.series=rova
+    stop vendor.fps_hal
+    mount none /vendor/etc/permissions/blank.xml /vendor/etc/permissions/android.hardware.fingerprint.xml bind
